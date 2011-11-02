@@ -1,3 +1,8 @@
+.container {
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
 a {
 	color: #FF4C00;
 	text-decoration: underline;
