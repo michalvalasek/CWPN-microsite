@@ -27,16 +27,16 @@
 			
 			<div class="row">
 				<ul class="media-grid">
-					<li><a class="gallery" href="images/large/photo_1.jpg" title="">
+					<li><a class="gallery" href="images/large/photo_1.jpg" rel="group1" title="">
 						<img class="thumbnail" src="images/small/photo_1.jpg" alt="" />
 					</a></li>
-					<li><a class="gallery" href="images/large/photo_2.jpg" title="">
+					<li><a class="gallery" href="images/large/photo_2.jpg" rel="group1" title="">
 						<img class="thumbnail" src="images/small/photo_2.jpg" alt="" />
 					</a></li>
-					<li><a class="gallery" href="images/large/photo_3.jpg" title="">
+					<li><a class="gallery" href="images/large/photo_3.jpg" rel="group1" title="">
 						<img class="thumbnail" src="images/small/photo_3.jpg" alt="" />
 					</a></li>
-					<li><a class="gallery" href="images/large/photo_4.jpg" title="">
+					<li><a class="gallery" href="images/large/photo_4.jpg" rel="group1" title="">
 						<img class="thumbnail" src="images/small/photo_4.jpg" alt="" />
 					</a></li>
 				</ul>
@@ -70,8 +70,8 @@
 					</ol>
 					<h3>Vybavenie</h3>
 					<ul>
-						<li>Pracovné miesta - stoly a kreslá.</li>
-						<li>Rýchly WiFi internet od Lombardu.</li>
+						<li>12 pracovných miest - stoly a kreslá.</li>
+						<li>Rýchly WiFi internet od <a href="http://www.lombard.sk" title="Lombard s.r.o." target="_blank">Lombardu</a>.</li>
 						<li>Vybavená kuchynka s chladničkou, mikrovlnkou, kávovarom a kanvicou.</li>
 						<li>Konferenčná miestnosť s flipchartom pre meetingy a stretnutia.</li>
 						<li>Odpočinková zóna s kreslami a beanbagom.</li>
@@ -83,20 +83,22 @@
 			
 			<div class="row">
 				<ul class="media-grid">
-					<li><a class="gallery" href="images/large/photo_5.jpg" title="">
+					<li><a class="gallery" href="images/large/photo_5.jpg" rel="group2" title="">
 						<img class="thumbnail" src="images/small/photo_5.jpg" alt="" />
 					</a></li>
-					<li><a class="gallery" href="images/large/photo_6.jpg" title="">
+					<li><a class="gallery" href="images/large/photo_6.jpg" rel="group2" title="">
 						<img class="thumbnail" src="images/small/photo_6.jpg" alt="" />
 					</a></li>
-					<li><a class="gallery" href="images/large/photo_7.jpg" title="">
+					<li><a class="gallery" href="images/large/photo_7.jpg" rel="group2" title="">
 						<img class="thumbnail" src="images/small/photo_7.jpg" alt="" />
 					</a></li>
-					<li><a class="gallery" href="images/large/photo_8.jpg" title="">
+					<li><a class="gallery" href="images/large/photo_8.jpg" rel="group2" title="">
 						<img class="thumbnail" src="images/small/photo_8.jpg" alt="" />
 					</a></li>
 				</ul>
 			</div>
+			
+			<br>
 			
 			<div class="page-header">
 				<h2>Kde to je?</h2>
@@ -127,24 +129,26 @@
 				</div>
 			</div>
 			
-			<br>
+			<br><br>
 			
 			<div class="row">
 				<ul class="media-grid">
-					<li><a class="gallery" href="images/large/photo_9.jpg" title="">
+					<li><a class="gallery" href="images/large/photo_9.jpg" rel="group3" title="">
 						<img class="thumbnail" src="images/small/photo_9.jpg" alt="" />
 					</a></li>
-					<li><a class="gallery" href="images/large/photo_10.jpg" title="">
+					<li><a class="gallery" href="images/large/photo_10.jpg" rel="group3" title="">
 						<img class="thumbnail" src="images/small/photo_10.jpg" alt="" />
 					</a></li>
-					<li><a class="gallery" href="images/large/photo_11.jpg" title="">
+					<li><a class="gallery" href="images/large/photo_11.jpg" rel="group3" title="">
 						<img class="thumbnail" src="images/small/photo_11.jpg" alt="" />
 					</a></li>
-					<li><a class="gallery" href="images/large/photo_12.jpg" title="">
+					<li><a class="gallery" href="images/large/photo_12.jpg" rel="group3" title="">
 						<img class="thumbnail" src="images/small/photo_12.jpg" alt="" />
 					</a></li>
 				</ul>
 			</div>
+			
+			<br>
 			
 			<div class="page-header">
 				<h2>Koľko to stojí?</h2>
@@ -196,7 +200,9 @@
 			'transitionOut': 'elastic',
 			'speedIn': 600,
 			'speedOut': 200,
-			'overlayShow': false
+			'overlayShow': false,
+			'hideOnOverlayClick': true,
+			'hideOnContentClick': true
 		});
 		
 		$("a[rel=popover]")
